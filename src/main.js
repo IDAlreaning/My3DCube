@@ -11,7 +11,7 @@ let renderer = new WebGLRenderer({ canvas: canvasElement }) //renderer類似於�
 
 renderer.setSize(canvasElement.clientWidth, canvasElement.clientHeight)
 renderer.setViewport(0, 0, canvasElement.clientWidth, canvasElement.clientHeight)
-
+renderer.setClearColor(new Color(1, 1, 1,))
 
 //3D世界有場景和攝影機，要先畫攝影機才會有東西建置
 
@@ -40,7 +40,7 @@ let light = new DirectionalLight(new Color(1, 1, 1), 0.7) //直光
 // light.rotation.x  = light.rotation.x + 0.2
 // light.rotateX(90 * Math.PI / 180)
 light.position.set(5, 1, 2)
-light.lookAt(new Vector3(0,0,0))
+light.lookAt(new Vector3(0, 0, 0))
 // scene.add(new DirectionalLightHelper(light))
 
 scene.add(light)
