@@ -1,0 +1,16 @@
+{
+  "name": "my3dcube",
+  "version": "1.0.0",
+  "description": "my learning note",
+  "main": "index.js",
+  "scripts": {
+    "test": "vite"
+  },
+  "type": "module",
+  "author": "Ida",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.173.0",
+    "vite": "^6.1.0"
+  }
+}
